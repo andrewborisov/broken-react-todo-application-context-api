@@ -1,0 +1,51 @@
+{
+  "extends": [
+    "airbnb/hooks",
+    "airbnb"
+  ],
+  "plugins": ["react"],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ]
+      }
+    }
+  },
+  "rules": {
+    "comma-dangle": [
+      "error",
+      "always-multiline"
+    ],
+    "consistent-return": "error",
+    "curly": ["error", "all"],
+    "indent": [0, 2, { "SwitchCase": 1}],
+    "max-len": [
+      "error",
+      80,
+      2,
+      {
+        "ignoreUrls": true,
+        "ignoreComments": false,
+        "ignoreRegExpLiterals": true,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true
+      }
+    ],
+    "quotes": [
+      "error",
+      "single",
+      {
+        "avoidEscape": true
+      }
+    ],
+    "eol-last": "warn",
+    "import/prefer-default-export": "off",
+    "react/prop-types": "off",
+    "no-unused-vars": "warn"
+  }
+}
